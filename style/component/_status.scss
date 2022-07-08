@@ -1,0 +1,34 @@
+.status {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 1px 8px;
+  color: #000;
+  font-size: 12px;
+  line-height: 20px;
+  &.status-primary {
+    color: $primary-color;
+    background-color: $primary-bgc;
+    border-color: $primary-border;
+  }
+  &.status-warning {
+    color: $warning-color;
+    background-color: $warning-bgc;
+    border-color: $warning-border;
+  }
+  &.status-pending {
+    color: $pending-color;
+    background-color: $pending-bgc;
+    border-color: $pending-border;
+  }
+  &.status-success {
+    color: $success-color;
+    background-color: $success-bgc;
+    border-color: $success-border;
+  }
+  &.status-fail {
+    color: $fail-color;
+    background-color: $fail-bgc;
+    border-color: $fail-border;
+  }
+}

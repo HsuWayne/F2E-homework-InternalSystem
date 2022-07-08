@@ -1,0 +1,27 @@
+.aside {
+  display: none;
+  width: 208px;
+  height: calc(100% - 48px);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 0px;
+  overflow: auto;
+  padding-top: 13px;
+  .aside-item {
+    margin-left: 16px;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+    .aside-item-text {
+      line-height: 22px;
+    }
+  }
+}
+@media (min-width: $break-point-tablet) {
+  .aside {
+    display: block;
+  }
+}

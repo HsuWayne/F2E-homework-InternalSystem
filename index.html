@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F2E_WEEK2</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-main">
+      <div class="navbar-title">ADAT Internal System</div>
+      <a href="#" class="navbar-menu"
+        ><img src="./assets/menu.svg" alt="menu"
+      /></a>
+    </nav>
+    <main>
+      <aside class="aside">
+        <div class="aside-item">
+          <img src="assets/QA.svg" alt="QA" />
+          <div class="aside-item-text">QA</div>
+        </div>
+        <div class="aside-item">
+          <img src="assets/customer.svg" alt="CustomerInfo" />
+          <div class="aside-item-text">Customer Info</div>
+        </div>
+      </aside>
+      <article class="article">
+        <nav class="article-nav">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-li">Home</li>
+            <li class="breadcrumb-li">/</li>
+            <li class="breadcrumb-li active">Customer Info</li>
+          </ul>
+          <h1 class="article-nav-title">Customer Info</h1>
+        </nav>
+        <form class="article-filter-group">
+          <div class="select-group-all">
+            <div class="select-group">
+              <label for="level">Level</label>
+              <select name="level" id="level">
+                <option value="All">All</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label for="level">Status</label>
+              <select name="level" id="level">
+                <option value="All">All</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label for="level">Nation</label>
+              <select name="level" id="level">
+                <option value="All">All</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-group">
+            <input
+              type="search"
+              id="search"
+              name="search"
+              placeholder="input search text"
+              class="search-group-input"
+            />
+            <input type="submit" value="" class="search-group-submit" />
+          </div>
+        </form>
+        <table class="article-table">
+          <tr class="article-table-header-row">
+            <th class="table-cell-big">Company name</th>
+            <th class="table-cell-small">Country</th>
+            <th class="table-cell-small">Level</th>
+            <th class="table-cell-small">Status</th>
+            <th class="table-cell-middle">Action</th>
+          </tr>
+          <tr class="article-table-data-row">
+            <td>
+              台灣高速鐵路股份有限公司<br />Taiwan High Speed Rail Corporation
+            </td>
+            <td>Taiwan</td>
+            <td>High</td>
+            <td><div class="status status-primary">not start</div></td>
+            <td>
+              <a href="#"><img src="./assets/edit.svg" alt="edit" /></a>
+              <a href="#" class="table-data-item-right"
+                ><img src="./assets/more.svg" alt="more"
+              /></a>
+            </td>
+          </tr>
+          <tr class="article-table-data-row">
+            <td>
+              日月光投資控股股份有限公司<br />ASE Technology Holding Co., Ltd
+            </td>
+            <td>Taiwan</td>
+            <td>Medium</td>
+            <td><div class="status status-warning">cooking</div></td>
+            <td>
+              <a href="#"><img src="./assets/edit.svg" alt="edit" /></a>
+              <a href="#" class="table-data-item-right"
+                ><img src="./assets/more.svg" alt="more"
+              /></a>
+            </td>
+          </tr>
+          <tr class="article-table-data-row">
+            <td>
+              台灣積體電路製造股份有限公司<br />Taiwan Semiconductor
+              Manufacturing Co., Ltd.
+            </td>
+            <td>Taiwan</td>
+            <td>Low</td>
+            <td><div class="status status-success">cooperating</div></td>
+            <td>
+              <a href="#"><img src="./assets/edit.svg" alt="edit" /></a>
+              <a href="#" class="table-data-item-right"
+                ><img src="./assets/more.svg" alt="more"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </main>
+  </body>
+</html>
